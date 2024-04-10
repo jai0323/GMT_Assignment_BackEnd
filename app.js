@@ -12,6 +12,9 @@ const OTP = require('./models/otp');
 const PORT = process.env.PORT ||  3000 ;
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+    return res.status(200).json({msg:"connected"})
+})
 
 app.post("/signup", (req,res) => {
     console.log(req.body);
