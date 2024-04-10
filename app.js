@@ -46,7 +46,6 @@ app.post("/signup", (req,res) => {
 
 
 
-
 app.post("/login",(req,res)=>{
     console.log("hiiii jiiii")
     const {email,password}=req.body;
